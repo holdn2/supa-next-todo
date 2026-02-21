@@ -39,3 +39,9 @@ yarn add @supabase/auth-ui-shared@^0.1.8
 yarn add cookies-next@^4.1.1
 - 좀 더 쉽게 쿠키 다루기
 ```
+
+## 구글 로그인 구현 3단계
+
+1. Google Cloud API Oauth 세팅
+2. Auth UI
+3. Callback 처리 (PKCE)
