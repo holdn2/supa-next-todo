@@ -23,6 +23,25 @@ const AuthUI = () => {
     window.location.reload();
   };
 
+  // Oauth 커스텀을 하려면 아래 핸들러를 바인딩하면 된다.
+  // const handleGoogleLogin = async () => {
+  //   await supabase.auth.signInWithOAuth({
+  //     provider: "google",
+  //     options: {
+  //       redirectTo: process.env.NEXT_PUBLIC_AUTH_REDIRECT_TO,
+  //     },
+  //   });
+  // };
+
+  // const handleGithubLogin = async () => {
+  //   await supabase.auth.signInWithOAuth({
+  //     provider: "github",
+  //     options: {
+  //       redirectTo: process.env.NEXT_PUBLIC_AUTH_REDIRECT_TO,
+  //     },
+  //   });
+  // };
+
   useEffect(() => {
     getUserInfo();
   }, []);
