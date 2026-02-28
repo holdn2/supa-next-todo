@@ -38,6 +38,10 @@ yarn add @supabase/auth-ui-shared@^0.1.8
 
 yarn add cookies-next@^4.1.1
 - 좀 더 쉽게 쿠키 다루기
+
+npx supabase gen types typescript --project-id 프로젝트아이디 --schema public > types/supabase.ts
+- 타입 제너레이팅
+
 ```
 
 ## 구글 로그인 구현 3단계

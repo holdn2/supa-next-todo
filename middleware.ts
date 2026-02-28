@@ -5,7 +5,7 @@ const COOKIE_COUNTER = "cookie-counter";
 export function middleware(request: NextRequest) {
   const response = NextResponse.next();
 
-  console.log("middleware 통과!");
+  // console.log("middleware 통과!");
 
   if (request.cookies.get(COOKIE_COUNTER)) {
     const prev = request.cookies.get(COOKIE_COUNTER)?.value;
