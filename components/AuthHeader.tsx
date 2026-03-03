@@ -2,7 +2,7 @@
 
 import { createSupabaseBrowserClient } from "@/lib/client/supabase";
 import { User } from "@supabase/supabase-js";
-import { useRouter } from "next/navigation";
+import { permanentRedirect, useRouter } from "next/navigation";
 import React from "react";
 import { FcTodoList, FcGoogle } from "react-icons/fc";
 import { AiOutlineLogout } from "react-icons/ai";
@@ -12,6 +12,7 @@ interface AuthHeaderProps {
 }
 
 const AuthHeader = ({ user }: AuthHeaderProps) => {
+  console.log(user);
   const isLoggedIn = !!user?.email;
   const supabase = createSupabaseBrowserClient();
   const router = useRouter();
